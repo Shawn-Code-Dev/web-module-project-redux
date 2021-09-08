@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 }
 
 const MovieList = (props)=> {
-    const movies = props.movies;
+    const movies = props.movieReducer.movies;
 
     return (
         <div className="col">

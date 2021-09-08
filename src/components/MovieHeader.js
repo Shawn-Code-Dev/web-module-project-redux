@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 
 const MovieHeader = (props) => {
     const appTitle = props.appTitle;
-    const displayFavorites = true;
+    const displayFavorites = props.favoriteReducer.displayFavorites;
     
     return(<div className="table-title">
         <div className="row">
